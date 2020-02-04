@@ -1,0 +1,109 @@
+body{
+	font-family:arial;
+	width:95%;
+	padding-bottom:40px;
+	padding-top:20px;
+	margin:auto;
+	background-color:#E5DFD0;
+}
+.nav{
+	display:flex;
+	background-color:black;
+	border-radius:5px;
+	padding:20px;
+	justify-content: space-around;
+}
+.nav-box{
+	text-align:center;
+}
+.nav-box a{
+	font-family:cursive;
+	color:coral;
+	font-size:20px;
+	text-decoration: none;
+}
+.nav-box a:hover{
+	color:#FFC773;
+}
+.head1{
+	padding:10px;
+	background-color:#EFC5C1;
+	width:75%;
+	margin:auto;
+	text-align:center;
+	color:#55534F;
+	font-family:"Century Gothic";
+}
+.others{
+	text-align:center;
+	display:block;
+}
+.navigation{
+	background-color: #D3CFCF;
+	padding-top: 5px;
+	
+}
+.navigation ul{
+	list-style:none;
+	padding-left:0;
+}
+.navigation a{
+	display:block;
+	text-decoration: none;
+	padding:5px;
+	font-weight: bold;
+	margin:3px;
+	background-color: #5E4543;
+	color:white;
+}
+.navigation a:hover{
+	color:coral;
+}
+.content{
+	font-size: 20px;
+}
+@media(min-width:700px){
+		.block-content{
+		display:flex;
+	}
+	.navigation{
+		flex:1;
+		order:1;
+		padding-right:15px;
+		margin-right:10px;
+	}
+	.content{
+		flex:2;
+		order:2;
+	}
+	.box-info1{
+		display:flex;
+		text-align:center;
+		margin-bottom:20px;
+		justify-content:space-around;
+	}
+	.box-info2{
+		display:flex;
+		justify-content:space-around;
+		text-align:center;
+	}
+	.box-info1 div{
+		width:30%;
+	}
+	.box-info2 div{
+		width:45%;
+	}
+}
+.box-1{
+		background-color:black;
+	    color:coral;
+	    border-radius:7px;
+		text-align:center;
+}
+.box-2{
+	    background-color:black;
+	    color:coral;
+	    border-radius:7px;
+		text-align:center;
+}
+

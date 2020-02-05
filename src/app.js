@@ -9,6 +9,9 @@ const partialsPath=path.join(__dirname,'../templates/partials');
 const forecast=require('./utils/forecast');
 const geocode=require('./utils/geocode');
 
+//Port for heroku to use
+const port=process.env.PORT || 3000;
+
 app.set('view engine','hbs'); //Tells express which templating engine to use
 app.set('views',viewsPath);
 hbs.registerPartials(partialsPath);
@@ -55,6 +58,6 @@ app.get('/*',(req,res)=>{
         author: 'Bhargav'
     })
 })
-app.listen(3000,()=>{
-    console.log('Server running on port 3k');
+app.listen(port,()=>{
+    console.log('Server running on port '+port);
 })

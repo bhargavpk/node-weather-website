@@ -44,7 +44,8 @@ app.get('/weather',(req,res)=>{
         forecast(data.latitude,data.longitude,getForecast=(errMessage,placeObj)=>{
             res.send({
                 location:req.query.address,
-                forecast:placeObj.daily.data[1].summary
+                forecast:placeObj.daily.data[1].summary,
+                precipProb:placeObj.daily.data[1].precipProbability
             });
         });
     })

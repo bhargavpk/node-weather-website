@@ -17,7 +17,7 @@ weatherForm.addEventListener('submit',(e)=>{
         else 
         {
             runMessage.textContent='';
-            resultMessage.textContent=data.forecast;
+            resultMessage.textContent='Forecast for tomorrow: '+data.forecast+' Probability of raining tomorrow is '+data.precipProb;
         }
     })
 });

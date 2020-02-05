@@ -21,7 +21,7 @@ app.use(express.static(publicPath));
 app.get('',(req,res)=>{
     res.render('index',{
         title:'Weather App',
-        author:'Bhargav'
+        author:'Bhargav PK'
     });
 });
 
